@@ -4,7 +4,6 @@ This is my config for Neovim.
 
 ## TODO.md 
 
-- Finding content in files
+- Setup keymaps
+- Setup Git tools in Neovim
 - 
-- Setup workflow for Programming
-

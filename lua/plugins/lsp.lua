@@ -5,23 +5,9 @@ return {
 		"mason-org/mason-lspconfig.nvim",
 		"neovim/nvim-lspconfig",
 	},
-	-- luasnip
-	{
-		"L3MON4D3/LuaSnip",
-		version = "v2.*",
-		build = "make install_jsregexp",
-	},
-	--    -- emmet
-	-- {
-	-- 	"olrtg/nvim-emmet",
-	-- 	config = function()
-	-- 		vim.keymap.set({ "n", "v" }, "<leader>xe", require("nvim-emmet").wrap_with_abbreviation)
-	-- 	end,
-	-- },
-	-- blink-cmp
+	-- auto completion
 	{
 		"saghen/blink.cmp",
-		dependencies = { "rafamadriz/friendly-snippets" },
 
 		version = "1.*",
 
@@ -52,37 +38,9 @@ return {
 			},
 
 			sources = {
-				default = { "lsp", "path", "snippets", "buffer" },
+				default = { "lsp", "buffer" },
 			},
-
-			fuzzy = { implementation = "prefer_rust_with_warning" },
 		},
 		opts_extend = { "sources.default" },
-	},
-	{
-		"nvim-treesitter/nvim-treesitter",
-		build = ":TSUpdate",
-		config = function()
-			require("nvim-treesitter.configs").setup({
-				-- A list of parser names, or "all" (the listed parsers MUST always be installed)
-				ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline", "php" },
-
-				sync_install = false,
-
-				auto_install = false,
-
-				highlight = {
-					enable = true,
-					disable = function(lang, buf)
-						local max_filesize = 100 * 1024 -- 100 KB
-						local ok, stats = pcall(vim.loop.fs_stat, vim.api.nvim_buf_get_name(buf))
-						if ok and stats and stats.size > max_filesize then
-							return true
-						end
-					end,
-					additional_vim_regex_highlighting = false,
-				},
-			})
-		end,
 	},
 }

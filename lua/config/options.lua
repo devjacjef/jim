@@ -14,3 +14,11 @@ opt.splitright = true
 opt.splitbelow = true
 
 opt.wrap = false
+
+vim.diagnostic.config({
+	virtual_text = true, -- inline error text
+	signs = true, -- show icons in sign column
+	underline = true, -- underline errors/warnings
+	update_in_insert = false, -- don't show while typing
+	severity_sort = true,
+})

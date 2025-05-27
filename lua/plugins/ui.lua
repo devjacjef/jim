@@ -1,12 +1,12 @@
 return {
 	-- colorscheme
 	{
-		"xiantang/darcula-dark.nvim",
-		dependencies = {
-			"nvim-treesitter/nvim-treesitter",
-		},
+		"folke/tokyonight.nvim",
+		lazy = false,
+		priority = 1000,
+		opts = {},
 		config = function()
-			vim.cmd.colorscheme("darcula-dark")
+			vim.cmd.colorscheme("tokyonight-storm")
 		end,
 	},
 	{

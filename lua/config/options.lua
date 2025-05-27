@@ -1,5 +1,7 @@
 local opt = vim.opt
 
+opt.termguicolors = true
+
 opt.number = true
 opt.autoindent = true
 opt.cursorline = true
@@ -11,4 +13,4 @@ vim.opt.expandtab = true
 opt.splitright = true
 opt.splitbelow = true
 
-opt.wrap = true
+opt.wrap = false

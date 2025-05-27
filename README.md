@@ -4,6 +4,15 @@ This is my config for Neovim.
 
 ## TODO.md 
 
-- Setup keymaps
-- Setup Git tools in Neovim
+### PHP
+
+- Setup PHP LSP
+    - Support for Embedded HTML, CSS and JS
+
+### Disable Markdown Snippets
+
+- Disable the extra snippets
+
+### Workflow
+
 - 

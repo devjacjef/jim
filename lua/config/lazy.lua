@@ -18,13 +18,10 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
 require("config.options")
+require("config.keybinds")
 
 require("lazy").setup({
 	spec = {
 		{ import = "plugins" },
 	},
-	-- automatically check for plugin updates
-	checker = { enabled = true },
 })
-
--- require("config.keymaps")

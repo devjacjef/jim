@@ -2,17 +2,7 @@
 
 This is my config for Neovim.
 
-## TODO.md 
+The goal of this config is to have a good coding workflow 
+and a good note taking workflow.
 
-### PHP
 
-- Setup PHP LSP
-    - Support for Embedded HTML, CSS and JS
-
-### Disable Markdown Snippets
-
-- Disable the extra snippets
-
-### Workflow
-
-- 

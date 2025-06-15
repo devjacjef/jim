@@ -1,6 +1,6 @@
 require("config.lazy")
 
-require("mason").setup()
-require("mason-lspconfig").setup()
+-- require("mason").setup()
+-- require("mason-lspconfig").setup()
 
-vim.lsp.enable({ "lua-ls", "emmet-ls", "intelephense" })
+vim.lsp.enable({ "lua-ls", "emmet-ls", "intelephense", "clangd" })

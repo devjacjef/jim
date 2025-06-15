@@ -3,7 +3,6 @@ local opt = vim.opt
 opt.termguicolors = true
 
 opt.number = true
-opt.autoindent = true
 opt.cursorline = true
 
 vim.opt.tabstop = 4

@@ -1,10 +1,11 @@
 -- This will be for auto-complete
 return {
     "saghen/blink.cmp",
+    version = "1.*",
     opts = {
         keymap = { preset = "super-tab" },
 
-        apperance = {
+        appearance = {
             nerd_font_variant = "mono",
         },
 
@@ -31,6 +32,6 @@ return {
             default = { "lsp", "buffer" },
         },
 
-        opts_extend = { "sources.default" },
+        -- opts_extend = { "sources.default" },
     }
 }

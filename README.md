@@ -1,8 +1,8 @@
 # Jack J Neovim config
 
-This is my config for Neovim.
+**Support is targetted for Neovim 0.11+.**
 
-The goal of this config is to have a good coding workflow 
-and a good note taking workflow.
+This is my personal Neovim config.
 
+I primarily use Neovim for coding and some writing.
 

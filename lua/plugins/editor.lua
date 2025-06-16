@@ -37,5 +37,15 @@ return {
         init = function()
             vim.o.formatexpr = "v:lua.require'conform'.formatexpr()"
         end,
-    }
+    },
+    {
+        "kylechui/nvim-surround",
+        event = "VeryLazy",
+        opts = {
+
+        },
+        config = function(_, opts)
+            require("nvim-surround").setup(opts)
+        end,
+    },
 }

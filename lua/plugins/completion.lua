@@ -1,6 +1,7 @@
 -- This will be for auto-complete
 return {
     "saghen/blink.cmp",
+    event = "InsertEnter",
     version = "1.*",
     opts = {
         keymap = { preset = "super-tab" },

@@ -8,5 +8,5 @@ return {
 			"sindrets/diffview.nvim", -- optional - Diff integration
 		},
 	},
-	{ "lewis6991/gitsigns.nvim" },
+	{ "lewis6991/gitsigns.nvim", event = "BufReadPre" },
 }

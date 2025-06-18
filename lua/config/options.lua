@@ -26,4 +26,3 @@ vim.o.autoread = true
 
 vim.o.backup = false
 vim.o.writebackup = false
-

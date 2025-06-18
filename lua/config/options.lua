@@ -21,3 +21,9 @@ vim.diagnostic.config({
 	update_in_insert = false, -- don't show while typing
 	severity_sort = true,
 })
+
+vim.o.autoread = true
+
+vim.o.backup = false
+vim.o.writebackup = false
+

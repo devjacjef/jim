@@ -26,3 +26,10 @@ vim.o.autoread = true
 
 vim.o.backup = false
 vim.o.writebackup = false
+
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
+vim.opt.clipboard = "unnamedplus"
+
+vim.cmd("colorscheme retrobox")

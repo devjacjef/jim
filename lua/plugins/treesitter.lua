@@ -1,7 +1,5 @@
--- will contain the treesitter config
 return {
 	"nvim-treesitter/nvim-treesitter",
-	event = "BufReadPre",
 	build = ":TSUpdate",
 	opts = {
 		ensure_installed = { "lua", "php", "c", "javascript" },

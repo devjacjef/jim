@@ -10,6 +10,9 @@ vim.keymap.set("i", "<C-S>", ":wq<CR>", { noremap = true, silent = true, desc = 
 vim.keymap.set("n", "<C-M-s>", ":wqa<cr>", { noremap = true, silent = true, desc = "save and quit all buffers." })
 vim.keymap.set("i", "<C-M-s>", ":wqa<cr>", { noremap = true, silent = true, desc = "save and quit all buffers." })
 
+-- Quit buffer
+vim.keymap.set("n", "<C-q>", ":q!<cr>", { noremap = true, silent = true, desc = "Quit the buffer." })
+
 -- Select entire page
 vim.keymap.set("n", "<leader>=", "ggVG", { noremap = true, silent = true, desc = "Select entire buffer." })
 

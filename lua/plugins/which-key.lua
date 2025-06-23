@@ -1,11 +1,6 @@
--- file just for which-key plugin
-
 return {
     "folke/which-key.nvim",
     event = "VeryLazy",
-    opts = {
-        --
-    },
     keys = {
         {
             "<leader>?",

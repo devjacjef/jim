@@ -1,5 +1,3 @@
--- For telescope and for neo-tree
-
 return {
     {
         "nvim-telescope/telescope.nvim",
@@ -40,4 +38,14 @@ return {
             },
         },
     },
+    {
+        "nvim-telescope/telescope-file-browser.nvim",
+        keys = {
+            {
+                "<leader>fb",
+                "<cmd>Telescope file_browser<CR>",
+                desc = "File Browser"
+            }
+        },
+    }
 }

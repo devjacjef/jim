@@ -1,4 +1,3 @@
--- This will be for auto-brackets, auto-formatting, surrond, code structure
 return {
     {
         "windwp/nvim-autopairs",
@@ -53,11 +52,35 @@ return {
         "hedyhli/outline.nvim",
         lazy = true,
         cmd = { "Outline", "OutlineOpen" },
-        keys = { -- Example mapping to toggle outline
+        keys = {
             { "<leader>o", "<cmd>Outline<CR>", desc = "Toggle outline" },
         },
         opts = {
             -- Your setup opts here
         },
+    },
+    {
+        "folke/twilight.nvim",
+        opts = {
+            treesitter = true
+        },
+        keys = {
+            {
+                "<leader>t",
+                "<cmd>Twilight<CR>",
+                desc = "Toggle Twilight"
+            }
+        }
+    },
+    {
+        "folke/zen-mode.nvim",
+        opts = {},
+        keys = {
+            {
+                "<leader>Z",
+                "<cmd>ZenMode<CR>",
+                desc = "Toggle Zen Mode"
+            }
+        }
     },
 }

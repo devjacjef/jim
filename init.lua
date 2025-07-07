@@ -1,3 +1,3 @@
 require("config.lazy")
 
-vim.lsp.enable({ "lua-ls", "emmet-ls", "intelephense", "clangd" })
+vim.lsp.enable({ "ts_ls", "lua-ls", "emmet-ls", "intelephense", "clangd" })
